@@ -1,0 +1,44 @@
+﻿@using BlazorLinks.TestSite.Pages
+@using Index = BlazorLinks.TestSite.Pages.Index
+
+<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">BlazorLinks.TestSite</a>
+</div>
+
+<div>
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="@Index.Link()" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Index
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="@PlainLink.Link()">
+                <span class="oi oi-plus" aria-hidden="true"></span> PlainLink
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="@BlazorLinks.TestSite.Pages.CodeBlock.IntParameter.Link(1)">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> CodeBlock Int
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="@BlazorLinks.TestSite.Pages.SeparateCodeFile.IntParameter.Link(1)">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> SeparateCodeFile Int
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="@BlazorLinks.TestSite.Pages.CodeBlock.StringParameter.Link("Words Go Here")">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> CodeBlock String
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="@BlazorLinks.TestSite.Pages.SeparateCodeFile.StringParameter.Link("Words Go Here")">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> SeparateCodeFile String
+            </NavLink>
+        </li>
+    </ul>
+</div>

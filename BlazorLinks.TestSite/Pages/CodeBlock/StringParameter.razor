@@ -1,0 +1,12 @@
+﻿@page "/CodeBlock/StringParameter/{Word}"
+
+<h1>String Parameter in code block</h1>
+
+<p>
+    @Word
+</p>
+
+@code {
+    [Parameter]
+    public String Word { get; set; } = "Unset";
+}

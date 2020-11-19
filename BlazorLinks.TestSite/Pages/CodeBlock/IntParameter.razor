@@ -1,0 +1,12 @@
+﻿@page "/CodeBlock/IntParameter/{Number:int}"
+
+<h1>Int Parameter in code block</h1>
+
+<p>
+    @Number
+</p>
+
+@code {
+    [Parameter]
+    public Int32 Number { get; set; }
+}
