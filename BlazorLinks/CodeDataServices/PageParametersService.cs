@@ -8,7 +8,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace BlazorLinks.CodeDataServices
 {
-    public sealed class PageParametersService
+    internal sealed class PageParametersService
     {
         internal void FetchParameters(PageModel page, GeneratorExecutionContext context)
         {
@@ -31,7 +31,7 @@ namespace BlazorLinks.CodeDataServices
                 var name = member.Identifier.Text;
                 var type = context.Compilation.GetSemanticModel(member.Type.SyntaxTree).GetTypeInfo(member.Type).Type!;
                 
-                page.PageParameters.Add(new PageParameter(type, name));
+                page.PageParameters.Add(new PageParameterModel(type, name));
             }
         }
 

@@ -4,7 +4,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace BlazorLinks.CodeDataServices
 {
-    public sealed class RouteAttributeService
+    internal sealed class RouteAttributeService
     {
         public Boolean HasAttribute(ClassDeclarationSyntax classDeclaration)
         {

@@ -5,7 +5,7 @@ using BlazorLinks.SourceCreation;
 
 namespace BlazorLinks.SyntaxWalkers
 {
-    public class OtherPartialPartsSyntaxWalker : CSharpSyntaxWalker
+    internal class OtherPartialPartsSyntaxWalker : CSharpSyntaxWalker
     {
         public OtherPartialPartsSyntaxWalker(ClassDeclarationSyntax classToFind)
         {

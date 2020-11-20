@@ -5,7 +5,7 @@ using Microsoft.CodeAnalysis;
 namespace BlazorLinks.Generators
 {
     [Generator]
-    public class MainGenerator : ISourceGenerator
+    internal class PageLinkMethodGenerator : ISourceGenerator
     {
         public PageParametersService PageParametersService { get; } = new PageParametersService();
 

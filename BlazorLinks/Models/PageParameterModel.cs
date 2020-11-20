@@ -3,9 +3,9 @@ using Microsoft.CodeAnalysis;
 
 namespace BlazorLinks.Models
 {
-    public class PageParameter
+    internal class PageParameterModel
     {
-        public PageParameter(ITypeSymbol type, String name)
+        public PageParameterModel(ITypeSymbol type, String name)
         {
             Type = type;
             Name = name;
