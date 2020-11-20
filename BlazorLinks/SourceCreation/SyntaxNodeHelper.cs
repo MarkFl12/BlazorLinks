@@ -1,8 +1,8 @@
-﻿using Microsoft.CodeAnalysis;
-using System;
+﻿using System;
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace BlazorLinks
+namespace BlazorLinks.SourceCreation
 {
     internal static class SyntaxNodeHelper
     {

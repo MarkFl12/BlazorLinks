@@ -1,11 +1,11 @@
-﻿using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using BlazorLinks.CodeDataServices;
 using BlazorLinks.Models;
+using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace BlazorLinks
+namespace BlazorLinks.Generators
 {
     internal class PageSyntaxReceiver : ISyntaxReceiver
     {

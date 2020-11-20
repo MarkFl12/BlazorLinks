@@ -1,7 +1,8 @@
 ﻿using System;
 using BlazorLinks.Models;
+using BlazorLinks.SourceCreation;
 
-namespace BlazorLinks
+namespace BlazorLinks.Generators
 {
     internal static class FileNameHelper
     {

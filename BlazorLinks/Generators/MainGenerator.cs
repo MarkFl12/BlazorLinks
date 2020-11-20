@@ -1,8 +1,8 @@
-﻿using System.Diagnostics;
-using BlazorLinks.CodeDataServices;
+﻿using BlazorLinks.CodeDataServices;
+using BlazorLinks.SourceCreation;
 using Microsoft.CodeAnalysis;
 
-namespace BlazorLinks
+namespace BlazorLinks.Generators
 {
     [Generator]
     public class MainGenerator : ISourceGenerator
