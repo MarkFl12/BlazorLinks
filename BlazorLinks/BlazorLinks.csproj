@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-		<Version>0.0.4-alpha</Version>
+		<Version>0.0.5-alpha</Version>
 		<Authors>MarkFl12</Authors>
 		<Company />
 		<Description>BlazorLinks makes it easier to generate links for your Blazor pages.</Description>

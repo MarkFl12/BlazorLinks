@@ -1,5 +1,3 @@
-# BlazorLinks
-
 ![Build Status](https://github.com/MarkFl12/BlazorLinks/workflows/Build%20and%20Test%20on%20main/badge.svg)
 
 [![BlazorLinks on NuGet](https://img.shields.io/nuget/v/BlazorLinks.svg)](https://www.nuget.org/packages/BlazorLinks/) 
@@ -27,8 +25,8 @@ where ProductDetails is the type of one of your components that has an @page dir
 You should install it into your Blazor project.
 
 ````powershell
-Install-Package BlazorLinks -Version 0.0.4-alpha
-dotnet add package BlazorLinks --version 0.0.4-alpha
+Install-Package BlazorLinks -Version 0.0.5-alpha
+dotnet add package BlazorLinks --version 0.0.5-alpha
 ````
 
 BlazorLinks is currently in alpha, if you have any issues, please let me know.
