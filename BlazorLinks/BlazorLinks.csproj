@@ -6,16 +6,15 @@
 		<Version>0.0.4-alpha</Version>
 		<Authors>MarkFl12</Authors>
 		<Company />
+		<Description>BlazorLinks makes it easier to generate links for your Blazor pages.</Description>
+		<RepositoryUrl>https://github.com/MarkFl12/BlazorLinks</RepositoryUrl>
+		<PackageTags>blazor wasm blazorlinks</PackageTags>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<NoPackageAnalysis>true</NoPackageAnalysis>
 		
 		<!-- Do not include the generator as a lib dependency -->
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 	</PropertyGroup>
-
-	<ItemGroup>
-	  <None Remove="bin\Debug\netstandard2.0\\BlazorLinks.dll" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<!-- Package the generator in the analyzer directory of the nuget package -->

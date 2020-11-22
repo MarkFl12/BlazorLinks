@@ -16,6 +16,6 @@ namespace BlazorLinks.Models
 
         public String RouteAttributeValue { get; }
 
-        public List<PageParameterModel> PageParameters { get; } = new();
+        public List<PageParameterModel> PageParameters { get; } = new List<PageParameterModel>();
     }
 }
