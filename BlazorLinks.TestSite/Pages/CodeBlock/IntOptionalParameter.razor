@@ -1,0 +1,12 @@
+﻿@page "/CodeBlock/IntOptionalParameter/{Number:int?}"
+
+<h1>Int Parameter in code block</h1>
+
+<p>
+    @(Number?.ToString() ?? "Was Null")
+</p>
+
+@code {
+    [Parameter]
+    public Int32? Number { get; set; }
+}

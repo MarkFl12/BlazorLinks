@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 using BlazorLinks.Models;
 using Microsoft.CodeAnalysis;
@@ -31,7 +32,6 @@ namespace BlazorLinks.SourceCreation
 
         public static CompilationUnitSyntax AddNamespace(this CompilationUnitSyntax compilationUnit, PageModel page, Func<NamespaceDeclarationSyntax, NamespaceDeclarationSyntax> action)
         {
-
             var namespaceName = page.ClassDeclarationSyntax.GetNamespaceFrom();
             if (namespaceName is not null)
             {
@@ -73,8 +73,13 @@ namespace BlazorLinks.SourceCreation
 
             foreach (var parameter in page.PageParameters)
             {
+                //if (page.ClassDeclarationSyntax.Identifier.ValueText == "IntOptionalParameter")
+                //{
+                //    Debugger.Launch();
+                //}
+
                 var parameterSyntax = SyntaxFactory.Parameter(SyntaxFactory.Identifier(parameter.Name))
-                    .WithType(SyntaxFactory.ParseTypeName(parameter.Type.Name));
+                    .WithType(SyntaxFactory.ParseTypeName(parameter.Type.ToString()));
                 parameterListSyntax = parameterListSyntax.AddParameters(parameterSyntax);
             }
 

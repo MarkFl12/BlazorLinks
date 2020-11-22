@@ -1,5 +1,3 @@
-# BlazorLinks
-
 ![Build Status](https://github.com/MarkFl12/BlazorLinks/workflows/Build%20and%20Test%20on%20main/badge.svg)
 
 ## What does BlazorLinks do?
